@@ -12,6 +12,7 @@ import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.com
 import { DropdownDirective } from './shared/dropdown.directive';
 import { RecipeService } from './recipes/recipe.service';
 import { ShoppingService } from './shopping-list/shopping.service';
+import { AppRoutingModule } from './app-routing/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ShoppingService } from './shopping-list/shopping.service';
     DropdownDirective
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [RecipeService, ShoppingService],
   bootstrap: [AppComponent]
