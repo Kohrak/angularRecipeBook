@@ -8,7 +8,7 @@ export class DropdownDirective {
 
   constructor(private elRef: ElementRef, private renderer: Renderer2) { }
 
-    @HostListener('click') click(eventData: Event){
+    @HostListener('click') toggleOpen(eventData: Event){
       this.renderer.addClass(this.elRef.nativeElement, 'open')
     }
 
